@@ -12,15 +12,12 @@ class Set(Protocol[T]):
 
     def __contains__(self, x: T) -> bool:
         """Test if x is in set."""
-        ...
 
     def add(self, x: T) -> None:
         """Add x to the set."""
-        ...
 
     def remove(self, x: T) -> None:
         """Remove x from the set."""
-        ...
 
 
 class SetCons(Protocol):
@@ -35,4 +32,3 @@ class SetCons(Protocol):
 
     def __call__(self, it: Iterable[T]) -> Set[T]:
         """Create a new set."""
-        ...
